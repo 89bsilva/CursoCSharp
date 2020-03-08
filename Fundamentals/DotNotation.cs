@@ -6,12 +6,13 @@ namespace CursoCSharp.Fundamentals
     {
         public static void Execute()
         {
-            var salutation = "hello".ToUpper().Insert(5, " Mundo!").Replace("Mundo", "WORLD");
+            var salutation = "ola".ToUpper().Insert(3, " World!").Replace("World", "MUNDO");
             Console.WriteLine(salutation);
-            Console.WriteLine("test".Length);
+            Console.WriteLine("teste".Length);
 
             string importantValue = null;
-            Console.WriteLine(importantValue?.Length); // Use "?" to secure navigation in dot notation
+            Console.WriteLine(importantValue?.Length); // Usar "?" para proteger a navegação na notação de ponto
+
         }
     }
 }

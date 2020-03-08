@@ -8,31 +8,31 @@ namespace CursoCSharp.Fundamentals
         {
             int intValue = 10;
             double doubleValue = intValue;
-            Console.WriteLine($"Conversion int({intValue}) to double: {doubleValue}");
+            Console.WriteLine($"Convertendo int({intValue}) para double: {doubleValue}");
 
             double gradesDouble = 9.7;
-            int gradesInt = (int) gradesDouble; //In this case, explicit conversion is required
-            Console.WriteLine($"Conversion double({gradesDouble}) to int: {gradesInt}");
+            int gradesInt = (int) gradesDouble; //Nesse caso, a conversão explícita é necessária
+            Console.WriteLine($"Convertendo double({gradesDouble}) para int: {gradesInt}");
 
             string numberInString;
             int numberInInt;
 
-            Console.Write("Enter your age: ");
+            Console.Write("Digite sua idade: ");
             numberInString = Console.ReadLine();
             numberInInt = int.Parse(numberInString);
-            Console.WriteLine($"Your age is: {numberInInt}");
+            Console.WriteLine($"Você tem: {numberInInt} anos");
             numberInInt = Convert.ToInt32(numberInString);
-            Console.WriteLine($"Your age is: {numberInInt}");
+            Console.WriteLine($"Você tem: {numberInInt} anos");
 
-            //Safer Conversion String to Int
-            Console.Write("Enter one integer number: ");
+            //Conversão segura de String para Int
+            Console.Write("Digite um número inteiro: ");
             numberInString = Console.ReadLine();
             int.TryParse(numberInString, out numberInInt);
-            Console.WriteLine($"{numberInInt} is the result of converting string({numberInString}) to type int");
+            Console.WriteLine($"{numberInInt} é o resultado da conversão da string({numberInString}) para tipo int");
 
-            Console.Write("Enter one integer number: ");
+            Console.Write("Digite um número inteiro: ");
             int.TryParse(Console.ReadLine(), out int number2InInt);
-            Console.WriteLine($"{number2InInt} is the result of second convertion string to type int");
+            Console.WriteLine($"{number2InInt} é o resultado da segunda conversão do tipo string para o tipo int");
         }
     }
 }

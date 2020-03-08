@@ -10,9 +10,9 @@ namespace CursoCSharp.Fundamentals
             string brand = "Dell";
             double price = 5800.00;
 
-            Console.WriteLine("The " + brand + " " + product + " costs R$" + price);
-            Console.WriteLine("The {0} {1} costs R${2}", brand, product, price);
-            Console.WriteLine($"The {brand} {product} costs R${price}");
+            Console.WriteLine("O " + product + " " + brand + " custa R$" + price);
+            Console.WriteLine("O {1} {0} custa R${2}", brand, product, price);
+            Console.WriteLine($"O {product} {brand} custa R${price}");
         }
     }
 }

@@ -8,21 +8,21 @@ namespace CursoCSharp.Fundamentals
         public static void Execute()
         {
             double ethanolPrice = 3.909;
-            Console.WriteLine(ethanolPrice.ToString("F1")); // One decimal place
-            Console.WriteLine(ethanolPrice.ToString("#.#")); // One decimal place
-            Console.WriteLine(ethanolPrice.ToString("F2")); // Two decimal places
-            Console.WriteLine(ethanolPrice.ToString("#.##")); // Two decimal places
-            Console.WriteLine(ethanolPrice.ToString("C")); // Currency with two decimal places (default)
-            Console.WriteLine(ethanolPrice.ToString("C0")); // Currency without decimal place
-            Console.WriteLine(ethanolPrice.ToString("C3")); // Currency with three decimal places
-            Console.WriteLine(ethanolPrice.ToString("P")); // Multiply by one hundred and add the percent sign
+            Console.WriteLine(ethanolPrice.ToString("F1")); // Uma casa decimal
+            Console.WriteLine(ethanolPrice.ToString("#.#")); // Uma casa decimal
+            Console.WriteLine(ethanolPrice.ToString("F2")); // Duas casas decimais
+            Console.WriteLine(ethanolPrice.ToString("#.##")); // Duas casas decimais
+            Console.WriteLine(ethanolPrice.ToString("C")); // Moeda com duas casas decimais (default)
+            Console.WriteLine(ethanolPrice.ToString("C0")); // Moeda sem casa decimal
+            Console.WriteLine(ethanolPrice.ToString("C3")); // Moeda com três casas decimais
+            Console.WriteLine(ethanolPrice.ToString("P")); // Multiplique por cem e adicione o sinal de porcentagem
 
             CultureInfo culture = new CultureInfo("pt-BR");
-            Console.WriteLine(ethanolPrice.ToString("C", culture)); // Force use of culture info
+            Console.WriteLine(ethanolPrice.ToString("C", culture)); // Força o uso da configuração de idioma passada como parâmetro para new CultureInfo()
 
             int integer = 0000001234;
             Console.WriteLine(integer.ToString());
-            Console.WriteLine(integer.ToString("D5")); //If the converted value has fewer digits than specified, leading zeros are added
+            Console.WriteLine(integer.ToString("D5")); //Se o valor convertido tiver menos dígitos que o especificado, zeros à esquerda serão adicionados  
             Console.WriteLine(integer.ToString("D10"));
         }
     }
